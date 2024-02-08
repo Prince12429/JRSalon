@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set Appointment - JR Salon</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="Logo.png">
+</head>
+<body>
+
+    <div class="header">
+        <a href="about.html">
+        <img src="Logo.png" alt="">
+        </a>
+    </div>
+
+<div id="appointment-page">
+    <h2>Set Appointment</h2>
+
+    <form id="appointment-form" action="appointment-summary.html" method="get">
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date">
+
+        <label for="time">Select Time:</label>
+        <select id="time" name="time" required>
+            <option value="08:00">8:00 AM</option>
+            <option value="09:00">9:00 AM</option>
+            <option value="10:00">10:00 AM</option>
+            <option value="11:00">11:00 AM</option>
+            <option value="12:00">12:00 PM</option>
+            <option value="13:00">1:00 PM</option>
+            <option value="14:00">2:00 PM</option>
+            <option value="15:00">3:00 PM</option>
+            <option value="16:00">4:00 PM</option>
+        </select>
+
+        <label for="service">Select Service:</label>
+        <select id="service" name="service" required>
+            <option value="Haircut/Trim">Haircut/Trim</option>
+            <option value="Manicure and Pedicure">Manicure and Pedicure</option>
+            <option value="Hair Dyeing">Hair Dyeing</option>
+        </select>
+
+        <label for="stylist">Select Stylist:</label>
+        <select id="stylist" name="stylist" required>
+            <option value="Jane Rae">Jane Rae</option>
+            <option value="Joana">Joana</option>
+            <option value="Edna">Edna</option>
+        </select>
+
+            <button onclick="location.href='appointment-summary.html'">Set Appointment</button>
+    </form>
+
+    <div class="back-button">
+        <a href="javascript:history.back()" class="button">Back</a>
+    </div>
+
+</div>
+
+</body>
+</html>
